@@ -4,20 +4,20 @@
 if(left){
     if (hspd > -maxspd) hspd-=spd;
     image_xscale = -1;
-    image_speed = - (hspd/maxspd*.8);    
-    //sprite_index = sp_alt_walk;    
+    image_speed = - (hspd/maxspd*.2);    
+    sprite_index = sp_herc_walk;
     
 }
 
 if(right){
     if (hspd < maxspd) hspd+=spd;
     image_xscale = 1;
-    image_speed = hspd/maxspd*.8;
-    //sprite_index = sp_alt_walk;    
+    image_speed = hspd/maxspd*.2;
+    sprite_index = sp_herc_walk;
 }
 
 if(!left && !right){
-    sprite_index = sp_player;
+    sprite_index = sp_herc_idle;
     image_speed = spd/maxspd;
 }
 

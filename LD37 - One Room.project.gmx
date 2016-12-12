@@ -19,6 +19,11 @@
       <sprite>sprites\sp_player_attackmask</sprite>
       <sprite>sprites\sp_health_bar_border</sprite>
       <sprite>sprites\sp_health_bar_fill</sprite>
+      <sprites name="Hercules">
+        <sprite>sprites\sp_herc_idle</sprite>
+        <sprite>sprites\sp_herc_attack</sprite>
+        <sprite>sprites\sp_herc_walk</sprite>
+      </sprites>
     </sprites>
     <sprites name="Map Assets">
       <sprite>sprites\mp_sprite_1</sprite>
@@ -64,6 +69,7 @@
         <script>scripts\assign_input_to_player.gml</script>
         <script>scripts\get_input.gml</script>
         <script>scripts\get_player_input.gml</script>
+        <script>scripts\enter_new_player.gml</script>
       </scripts>
     </scripts>
     <scripts name="Camera">

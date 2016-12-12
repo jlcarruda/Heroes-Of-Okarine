@@ -1,7 +1,7 @@
 ///player_attack_state()
 
 image_speed = .5;
-sprite_index = sp_player_attack;
+sprite_index = sp_herc_attack;
 
 if(image_index >= 1 && image_index < 3 ){
     with(instance_create(x,y,PlayerAttackMask)){
