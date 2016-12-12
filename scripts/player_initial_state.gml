@@ -1,6 +1,5 @@
 ///player_initial_state()
 
-
 if(left){
     if (hspd > -maxspd) hspd-=spd;
     image_xscale = -1;
@@ -27,5 +26,9 @@ if(light_attack){
 }
 
 if(jump && place_meeting(x, y+1, P_SolidObject)){
-    vspd += jump_force;    
+    vspd += jump_force;
+    image_index = 0;
+    sprite_index = sp_herc_onair;
+    image_speed = .4;
+    state = player_onair_state;
 }

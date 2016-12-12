@@ -28,4 +28,16 @@ if(dvc == "kb"){
     dash = gamepad_button_check(dvc, gp_face2);
 
     menu = gamepad_button_check(dvc, gp_start);
+}else{
+    up = false;
+    down = false;
+    left = false;
+    right = false;
+    
+    jump = false;
+    light_attack = false;
+    heavy_attack = false;
+    dash = false;
+
+    menu = false;
 }

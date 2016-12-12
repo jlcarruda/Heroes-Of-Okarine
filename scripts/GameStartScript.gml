@@ -26,7 +26,7 @@ if(global.gamepad_supported && gamepad_is_connected(0)){
 }
 
 ///DEBUG----------
-activate_player(ds_map_find_value(global.PlayerInstances, c_PLAYERONE_KEY));
+activate_player(ds_map_find_value(global.PlayerInstances, c_PLAYERONE_KEY), noone, noone);
 
 
 

@@ -23,6 +23,8 @@
         <sprite>sprites\sp_herc_idle</sprite>
         <sprite>sprites\sp_herc_attack</sprite>
         <sprite>sprites\sp_herc_walk</sprite>
+        <sprite>sprites\sp_herc_attack_2</sprite>
+        <sprite>sprites\sp_herc_onair</sprite>
       </sprites>
     </sprites>
     <sprites name="Map Assets">
@@ -38,6 +40,10 @@
       <sprite>sprites\sprite13</sprite>
       <sprite>sprites\sprite14</sprite>
       <sprite>sprites\sprite15</sprite>
+    </sprites>
+    <sprites name="Enemy">
+      <sprite>sprites\sp_enemy_zombie_walk</sprite>
+      <sprite>sprites\sp_enemy_zombie_idle</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -59,6 +65,7 @@
       <scripts name="States">
         <script>scripts\player_initial_state.gml</script>
         <script>scripts\player_attack_state.gml</script>
+        <script>scripts\player_onair_state.gml</script>
       </scripts>
       <script>scripts\create_player.gml</script>
       <script>scripts\activate_player.gml</script>
@@ -93,6 +100,7 @@
       <object>objects\P_SolidObject</object>
       <object>objects\P_LifeformObject</object>
       <object>objects\P_EnemyObject</object>
+      <object>objects\P_Player</object>
     </objects>
     <objects name="Meta Map Objects">
       <object>objects\Wall</object>
@@ -115,13 +123,14 @@
       </objects>
     </objects>
     <object>objects\System</object>
+    <object>objects\GUIObject</object>
     <object>objects\Camera</object>
     <object>objects\Enemy1</object>
     <objects name="Player">
       <object>objects\PlayerAttackMask</object>
       <object>objects\Player</object>
+      <object>objects\Player2</object>
     </objects>
-    <object>objects\GUIObject</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>
